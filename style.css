@@ -1,16 +1,47 @@
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 .gradient-text {
-    background: linear-gradient(90deg, #FF00CC, #7000FF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(90deg, #ff00cc, #7000ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .nav-btn {
-    background: linear-gradient(90deg, #FF00CC, #7000FF);
-    color: white;
-    transition: all 0.3s ease;
+  background: linear-gradient(90deg, #ff00cc, #7000ff);
+  color: white;
+  transition: all 0.3s ease;
 }
 .nav-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px #FF00CC;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px #ff00cc;
+}
+.hero-bg {
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.spotify-btn {
+  background: linear-gradient(90deg, #ffcc00, #ff00cc);
+  color: black;
+}
+.subscribe-outline-btn {
+  border: 1px solid #00ff85;
+  color: white;
+  transition: background 0.3s;
+}
+.subscribe-outline-btn:hover {
+  background: #6ab992;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-50%, -52%);
+  }
+  50% {
+    transform: translate(-50%, -48%);
+  }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
