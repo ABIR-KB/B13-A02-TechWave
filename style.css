@@ -1,84 +1,114 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 .gradient-text {
-  background: linear-gradient(90deg, #ff00cc, #7000ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    background: linear-gradient(90deg, #FF00CC, #7000FF);
+    background-clip: text;
+    color: transparent;
 }
+
 .nav-btn {
-  background: linear-gradient(90deg, #ff00cc, #7000ff);
-  color: white;
-  transition: all 0.3s ease;
+    background: linear-gradient(90deg, #FF00CC, #7000FF);
+    color: white;
+    transition: all 0.3s ease;
 }
+
 .nav-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px #ff00cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 0, 204, 0.3);
 }
-.hero-bg {
-  background-image: url("./assets/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-}
+
 .spotify-btn {
-  background: linear-gradient(90deg, #ffcc00, #ff00cc);
-  color: black;
+    background: linear-gradient(90deg, #FFCC00, #FF00CC);
+    color: black;
+    transition: opacity 0.3s;
 }
+
+.spotify-btn:hover {
+    opacity: 0.9;
+}
+
 .subscribe-outline-btn {
-  border: 1px solid #00ff85;
-  color: white;
-  transition: background 0.3s;
+    border: 1px solid #00FF85;
+    color: white;
+    transition: background 0.3s;
 }
+
 .subscribe-outline-btn:hover {
-  background: #6ab992;
+    background: rgba(0, 255, 133, 0.1);
 }
-@keyframes float {
-  0%,
-  100% {
-    transform: translate(-50%, -52%);
-  }
-  50% {
-    transform: translate(-50%, -48%);
-  }
+
+.hero-bg {
+    background-image: url('./assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
 }
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-.feature-card,
-.episode-card {
-  background-color: #1a0b2e;
-  border-radius: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: 0.3s;
-}
-.feature-card:hover {
-  border-color: #ff00cc;
-  transform: translateY(-8px);
-}
-.episode-card:hover {
-  border-color: #00ff85;
-}
-.play-btn {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  text-decoration: none;
-}
-.host-section {
-  background-color: #1a0b2e;
-}
+
 .footer-bg {
-  background-image: url("./assets/footer-bg.png");
-  background-size: cover;
-  border-top: 1px solid #1f1235;
+    background-image: url('./assets/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid #1f1235;
+}
+
+.feature-card {
+    background-color: #1A0B2E;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    border-color: #FF00CC;
+    transform: translateY(-8px);
+}
+
+.episode-card {
+    background-color: #1A0B2E;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: border-color 0.3s;
+}
+
+.episode-card:hover {
+    border-color: #00FF85;
+}
+
+.play-btn {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.play-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.host-section {
+    background-color: #1A0B2E;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(-50%, -52%); }
+    50% { transform: translate(-50%, -48%); }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
 }
