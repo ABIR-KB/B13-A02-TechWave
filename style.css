@@ -74,3 +74,11 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.4);
   text-decoration: none;
 }
+.host-section {
+  background-color: #1a0b2e;
+}
+.footer-bg {
+  background-image: url("./assets/footer-bg.png");
+  background-size: cover;
+  border-top: 1px solid #1f1235;
+}
