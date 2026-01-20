@@ -45,3 +45,32 @@ html {
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+.feature-card,
+.episode-card {
+  background-color: #1a0b2e;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+.feature-card:hover {
+  border-color: #ff00cc;
+  transform: translateY(-8px);
+}
+.episode-card:hover {
+  border-color: #00ff85;
+}
+.play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
